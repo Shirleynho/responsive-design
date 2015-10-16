@@ -1,0 +1,279 @@
+body {
+	font-family: arial, sans-serif;
+}
+
+/*================
+HEADER
+================*/
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: blue;
+	z-index: 9000;
+}
+
+/*================
+CONTAINER
+================*/
+
+.container {
+	width: auto;
+	height: 420px;
+	margin: 60px 10px 10px 10px;
+	overflow: hidden;
+}
+
+.col-1-2 {
+	float: left;
+	width: 49.5%;
+	height: 100%;
+	margin-right: 1%;
+}
+
+.col-1-2:last-child {
+	margin-right: 0;
+}
+
+
+#featured-img2 {
+	float: left;
+	height: 49%;
+	width: 100%;
+	margin-bottom: 2%;
+	background-color: blue;
+}
+
+#featured-img3, #featured-img4 {
+	float: left;
+	height: 49%;
+	width: 49%;
+	margin-right: 2%;
+	background-color: yellow; 
+}
+
+#featured-img4 {
+	margin-right: 0;
+}
+
+/*================
+LATEST NEWS 
+================*/
+
+.latest-news-container {
+	width: auto;
+	margin-top: 20px;
+	margin-left: 1.5%;
+	height: 400px;
+	padding: 20px 4% 0 5%;
+	font-size: .9em;
+	line-height: 1.1em;
+}
+
+h2 {
+	position: relative;
+	font-size: 2em;
+	color: #FF4020;
+	font-weight: bold;
+	margin-bottom: 20px;
+	vertical-align: middle;
+}
+
+.latest-news-container a {
+	text-decoration: none;
+	color: black;
+}
+
+.latest-news-container li {
+	display: inline-block;
+	width: 15%;
+	height: auto;
+	margin-right: 1%;
+	margin-bottom: 10px;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+/*.latest-news-container li:nth-child(6n) {
+	margin-right: 0;
+}*/
+
+.latest-news-container div {
+	margin-bottom: 10px;
+}
+
+.latest-news-container span {
+	display: block;
+	color: #666;
+	font-size: .8em;
+	font-weight: normal;
+}
+
+/*================
+BACKGROUND IMAGES
+================*/
+
+#featured-img1 {
+	background: url("img/featured1.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#featured-img2 {
+	background: url("img/featured2.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#featured-img3 {
+	background: url("img/featured3.png") no-repeat center;
+	background-size: cover;
+}
+
+#featured-img4 {
+	background: url("img/featured4.jpg") no-repeat center;
+	background-size: cover;
+}
+
+.latest-img {
+	height: 100px;
+}
+
+#latest1 {
+	background: url("img/latest1.jpg") no-repeat center;
+	background-size: cover;
+}
+
+
+#latest2 {
+	background: url("img/latest2.jpg") no-repeat center;
+	background-size: cover;	
+}
+
+#latest3 {
+	background: url("img/latest3.jpg") no-repeat center;
+	background-size: cover;
+}
+
+#latest4 {
+	background: url("img/latest4.gif") no-repeat center;
+	background-size: cover;
+}
+
+#latest5 {
+	background: url("img/latest5.gif") no-repeat center;
+	background-size: cover;
+}
+
+#latest6 {
+	background: url("img/latest6.jpg") no-repeat center;
+	background-size: cover;
+}
+
+@media only screen and (max-width: 1133px) {
+
+	.latest-news-container li {
+		width: 18%;
+	}
+
+	.latest12, .latest11 {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.container {
+		overflow: hidden;
+	}
+
+	.col-1-2 {
+		width: 100%;
+		height: 49.5%;
+		margin-right: 0;
+		margin-bottom: 1%;
+	}
+
+	#featured-img2, #featured-img3, #featured-img4 {
+		float: left;
+		width: 32.6%;
+		height: 100%;
+		margin-right: 1%;
+		margin-bottom: 0;
+	}
+
+	#featured-img4 {
+		margin-right: 0;
+	}
+}
+
+@media only screen and (max-width: 894px) {
+
+	.latest11, .latest12 {
+		display: block;
+	}
+
+	.latest-news-container li {
+		width: 23.4%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.container {
+		overflow: visible;
+		height: auto;
+	}
+
+	#featured-img2, #featured-img3, #featured-img4 {
+		height: 210px;
+		width: 100%;
+		float: none;
+		margin-right: 0; 
+		margin-bottom: 10px;
+	}
+
+	#featured-img1 {
+		float: none;
+		height: 210px;
+	}
+
+}
+
+@media only screen and (max-width: 684px) {
+
+	.latest-news-container {
+		width: auto;
+		position: relative;
+		top: 10px;
+		padding-left: 1%;
+		font-size: .75em;
+
+	}
+	.latest-news-container li {
+		width: 31.9%;
+	}
+}
+
+@media only screen and (max-width: 627px) {
+	.latest-news-container li {
+		width: 48%;
+	}
+
+	.latest-img {
+		height: 150px;
+	}
+}
+
+@media only screen and (max-width: 468px) {
+	.latest-news-container li {
+		width: 100%;
+	}
+
+	.latest-img {
+		height: 200px;
+	}
+}
+
+/*http://cdn0.tnwcdn.com/wp-content/themes/icetea/lemonsoda/img/tnw.svg*/
